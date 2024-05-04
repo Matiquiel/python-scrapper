@@ -32,13 +32,17 @@ def scrape_section(sitemap, path_prefix):
     # Example sitemap URL
     # Fetch URLs from sitemap and filter based on path prefix
     urls = fetch_urls_from_sitemap(sitemap, path_prefix)
-    
+
+    if(os.path.exists("./output")):
+        os.mkdir('./output')
+
     # Scrape and save content for each URL
     for url in urls:
         print(f"Reading url {url}")
         # Extract filename from URL
         parsed_url = urlparse(url)
-        filename = 'output/' + os.path.basename(parsed_url.path) + '.txt'
+
+        filename = './output' + os.path.basename(parsed_url.path) + '.txt'
         
         # Scrape page content
         page_content = scrape_page(url)
