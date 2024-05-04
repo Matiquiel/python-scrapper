@@ -1,4 +1,0 @@
-JurojinPoker is a poker app for professional poker players that play online on diffferent casinos, its main advantage is that its really useful for multitabling,
-you have three main pillars: overlays/HUDs: live data on tables that help you decide, hotkeys/betsizes: custom betsizes for every supported poker site sharing the same keybinding, and tiling: accomodate tables on screen in mosaic or dynamic ways such as when it is your turn to act(action required slots) or when you vpip a hand(in hand slots).
-
-The app website is jurojinpoker.com
